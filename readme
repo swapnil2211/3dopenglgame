@@ -1,0 +1,29 @@
+HOW TO COMPILE
+
+run the makefile using make command
+if the make command gives errors,
+run the command:
+g++ `pkg-config --cflags glfw3` -o game2 game2.cpp glad.c `pkg-config --static --libs glfw3`
+
+
+GAME
+
+-> About the game
+the game consists of a 10X10 board with obstacles and pits.
+You need to reach the top right corner of the board to win.
+Falling in the pit will lead to you losing a life.
+You get 3 lives for the game...use them wisely..
+
+
+->Control
+
+Left arrow (->) : to move left
+Right arrow(<-) : to move right
+Up arrow : to move up
+Down arrow : to move down
+Space + desired direction : to jump in the specified direction
+'A' and 'S' to alter camera views.
+'Z' to zoom in.
+'O' to zoom out.
+
+
